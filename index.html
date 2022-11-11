@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
     <header class="page-header">
-      <img class="logo" src="" alt="Логотип "City of Sedona">
+      <a class="logo-link" href="index.html">
+        <img class="logo" src="" alt="Логотип City of Sedona">
+      </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -45,6 +49,7 @@
         Седона
       </h1>
       <section class="greeting">
+        <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
         <p class="information">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
@@ -91,38 +96,40 @@
         </ul>
       </section>
       <section class="search-hotel">
-        <h2 class="search-hotel-title">Поиск гостиницы</h2>
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="search-hotel-question">Заинтересовались?</p>
-        <p class="search-hotel-deadline">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="search-hotel-deadline">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+          гостиниц в Седоне</p>
         <a class="button-search" href="#">Поиск гостиницы в Седоне</a>
       </section>
+    </main>
+    <footer class="page-footer">
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subsribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscribe-email">Email</label>
-          <input class="field" placeholder="email@example.com" type="email" name="subscribe-email" id="subscribe-email" required>
-          <button class="subscribe-button" type="submit"></button>Подписаться</button>
-      </form>
+          <input class="field" placeholder="email@example.com" type="email" name="subscribe-email" id="subscribe-email"
+            required>
+          <button class="subscribe-button" type="submit">Подписаться</button>
+        </form>
       </section>
-    </main>
-    <footer class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Инстаграм</span>
+            <a class="button" href="https://www.youtube.com/user/htmlacademy">
+              <span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
@@ -131,4 +138,5 @@
       </section>
     </footer>
   </body>
+
 </html>
